@@ -266,6 +266,26 @@ ALTER TABLE dbo.MovieToActors
 ADD CONSTRAINT FK_MovieToActors_MovieID FOREIGN KEY(MovieID) REFERENCES dbo.Movie(MovieID)
 
 
+/*
+ALTER TABLE dbo.Movie 
+DROP CONSTRAINT FK_Movie_GenreID 
+GO
+ALTER TABLE dbo.Movie 
+DROP CONSTRAINT FK_Movie_StarID 
+GO
+ALTER TABLE dbo.Movie 
+DROP CONSTRAINT FK_Movie_ClassID 
+GO
+ALTER TABLE dbo.MovieToMediaType
+DROP CONSTRAINT FK_MOvieToMediaType_TypeID 
+GO
+ALTER TABLE dbo.MovieToMediaType
+DROP CONSTRAINT FK_MovieToMediaType_MovieID 
+GO
+ALTER TABLE dbo.MovieToActors
+DROP CONSTRAINT FK_MovieToActors_ActorID 
+
+*/
 
 
 
